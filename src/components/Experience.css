@@ -1,0 +1,145 @@
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    height: 100%;
+    padding: 2.5rem;
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+}
+
+.experience-header {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Timeline Line */
+.experience-container::before {
+    content: '';
+    position: absolute;
+    top: 6rem;
+    bottom: 2rem;
+    left: 3.5rem;
+    width: 2px;
+    background: var(--glass-border);
+}
+
+.job-card {
+    position: relative;
+    padding-left: 3rem;
+    /* Space for dot */
+    margin-bottom: 2.5rem;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    overflow: visible;
+}
+
+.job-card:last-child {
+    margin-bottom: 0;
+}
+
+.job-card::before {
+    display: none;
+}
+
+/* Timeline Dot */
+.job-card::after {
+    content: '';
+    position: absolute;
+    left: -2.35rem;
+    /* Relative to padding */
+    top: 0.3rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--text-secondary);
+    background: var(--bg-color);
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.job-card:hover::after {
+    border-color: var(--accent-color);
+    background: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.job-role {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: block;
+    /* Make role display block if needed, or keep inline */
+}
+
+.job-company {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+.job-date {
+    position: static;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    background: transparent;
+    padding: 0;
+    border: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.job-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tech-tag {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    background: rgba(56, 189, 248, 0.08);
+    /* Accent color low opacity */
+    color: var(--accent-color);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
