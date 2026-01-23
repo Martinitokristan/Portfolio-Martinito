@@ -1,5 +1,5 @@
 .app-container {
-  max-width: 1400px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -17,11 +17,11 @@
 .left-column {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
 }
 
 .right-column {
-  height: fit-content;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 1024px) {

@@ -6,12 +6,16 @@
 }
 
 .about-card {
-    padding: 2.5rem;
+    padding: 2rem;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .about-text {
     color: var(--text-secondary);
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.7;
 }
 
@@ -20,26 +24,32 @@
 }
 
 .stack-card {
-    padding: 2.5rem;
+    padding: 2rem;
+    flex-grow: 1;
 }
 
 .stack-category {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .category-label {
     display: block;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: var(--text-primary);
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.6rem;
     opacity: 0.8;
 }
 
 .tech-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     gap: 1rem;
+    width: 100%;
+    justify-content: center;
 }
 
 .tech-item {
@@ -49,21 +59,55 @@
     justify-content: center;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--glass-border);
-    border-radius: 16px;
-    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    padding: 1rem 0.6rem;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: default;
+    animation: chaosCrash 3.8s ease-in-out infinite;
+    animation-delay: calc(var(--i, 0) * 0.23s);
 }
 
 .tech-item:hover {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 0, 0.05);
+    /* Flash on hover */
     border-color: var(--accent-color);
-    transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px) scale(1.15) rotate(0deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    animation-play-state: paused;
+    z-index: 10;
+}
+
+@keyframes chaosCrash {
+
+    0%,
+    100% {
+        transform: translateY(0) translateX(0) scale(1) rotate(0);
+    }
+
+    18% {
+        transform: translateY(var(--ry)) translateX(var(--rx)) scale(0.9) rotate(var(--rr));
+        /* Sharp Crash */
+        filter: brightness(1.2);
+    }
+
+    23% {
+        transform: translateY(calc(var(--ry) * 0.6)) translateX(calc(var(--rx) * 0.6)) scale(1.1) rotate(calc(var(--rr) * -0.5));
+        /* Impact Shake */
+    }
+
+    50% {
+        transform: translateY(-18px) translateX(calc(var(--rx) * -0.2)) scale(1.05) rotate(calc(var(--rr) * 0.1));
+        /* High Bounce */
+    }
+
+    78% {
+        transform: translateY(calc(var(--ry) * 0.9)) translateX(calc(var(--rx) * -0.7)) scale(0.95) rotate(calc(var(--rr) * -0.4));
+        /* Secondary Shuffle */
+    }
 }
 
 .tech-icon {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 0.8rem;
     color: var(--text-secondary);
     transition: color 0.3s ease;

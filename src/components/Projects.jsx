@@ -31,8 +31,8 @@ const projects = [
 
 const Projects = () => {
     return (
-        <section className="projects-section">
-            <h2 className="section-header">The Big Three</h2>
+        <section id="projects" className="projects-section">
+            <h2 className="section-title">Projects</h2>
             <div className="projects-grid">
                 {projects.map((project) => (
                     <div key={project.id} className="glass-card project-card">
