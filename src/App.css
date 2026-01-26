@@ -27,9 +27,48 @@
   gap: 1.5rem;
 }
 
+/* Responsive breakpoints for all devices */
+@media (max-width: 1400px) {
+  .app-container {
+    padding: 0 100px 3rem 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .app-container {
+    padding: 0 60px 3rem 60px;
+  }
+}
+
 @media (max-width: 1024px) {
+  .app-container {
+    padding: 0 40px 3rem 40px;
+  }
+  
   .main-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 0 20px 2rem 20px;
+    gap: 1rem;
+  }
+  
+  .main-grid {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    padding: 0 15px 1.5rem 15px;
+    gap: 0.75rem;
+  }
+  
+  .main-grid {
+    gap: 0.75rem;
   }
 }
 

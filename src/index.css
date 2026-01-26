@@ -49,6 +49,22 @@ body {
   padding: 2rem;
 }
 
+@media (max-width: 768px) {
+  #root {
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #root {
+    padding: 1rem 0;
+  }
+  
+  body {
+    font-size: 14px;
+  }
+}
+
 /* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;

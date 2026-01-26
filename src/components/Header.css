@@ -156,24 +156,103 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 0.75rem 1rem;
+    }
+    
+    .profile-wrapper {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .header-name {
+        font-size: 1.65rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .header-container {
+        padding: 1rem 0.75rem;
+    }
+    
     .header-content {
         flex-direction: column;
         text-align: center;
+        gap: 1rem;
+    }
+
+    .profile-wrapper {
+        width: 120px;
+        height: 120px;
+        margin-left: 0;
     }
 
     .header-info {
         align-items: center;
     }
+    
+    .header-name {
+        font-size: 1.5rem;
+    }
+    
+    .location-row {
+        justify-content: center;
+    }
+    
+    .header-role {
+        font-size: 0.95rem;
+    }
 
     .header-actions {
         justify-content: center;
         width: 100%;
+        flex-wrap: wrap;
+    }
+    
+    .action-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
     }
     
     .header-theme-toggle {
         position: absolute;
         top: 1rem;
         right: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        padding: 1rem 0.5rem;
+    }
+    
+    .profile-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .header-name {
+        font-size: 1.35rem;
+    }
+    
+    .location-row,
+    .header-role {
+        font-size: 0.85rem;
+    }
+    
+    .header-actions {
+        gap: 0.5rem;
+    }
+    
+    .action-btn {
+        padding: 0.55rem 0.9rem;
+        font-size: 0.8rem;
+    }
+    
+    .header-theme-toggle {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
     }
 }

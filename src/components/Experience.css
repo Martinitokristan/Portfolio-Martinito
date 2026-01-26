@@ -122,3 +122,58 @@
         transform: translateY(0);
     }
 }
+
+@media (max-width: 768px) {
+    .experience-container {
+        padding: 1.5rem;
+    }
+    
+    .experience-header {
+        font-size: 1.2rem;
+    }
+    
+    .job-card {
+        padding: 1rem;
+    }
+    
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .job-date {
+        white-space: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-container {
+        padding: 1.25rem;
+    }
+    
+    .experience-header {
+        font-size: 1.1rem;
+    }
+    
+    .job-role {
+        font-size: 0.95rem;
+    }
+    
+    .job-company {
+        font-size: 0.8rem;
+    }
+    
+    .job-date {
+        font-size: 0.75rem;
+    }
+    
+    .job-desc {
+        font-size: 0.85rem;
+    }
+    
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 0.15rem 0.5rem;
+    }
+}
