@@ -26,6 +26,14 @@ const projects = [
         description: 'An experimental task manager that uses AI to prioritize daily goals. Represents my interest in AI integration and intelligent UI.',
         tech: ['OpenAI API', 'Next.js', 'Tailwind'],
         link: '#'
+    },
+    {
+        id: 4,
+        title: 'Weather Dashboard',
+        category: 'Foundation (What I Know)',
+        description: 'A weather forecasting app that displays real-time weather data. Built with API integration and responsive design principles.',
+        tech: ['React', 'Weather API', 'CSS3'],
+        link: '#'
     }
 ];
 
@@ -43,10 +51,6 @@ const Projects = () => {
                             {project.tech.map((t, i) => (
                                 <span key={i} className="tech-badge">{t}</span>
                             ))}
-                        </div>
-                        <div className="project-links">
-                            <a href={project.link} className="icon-link"><FaGithub /> Code</a>
-                            <a href={project.link} className="icon-link"><FaExternalLinkAlt /> Live</a>
                         </div>
                     </div>
                 ))}

@@ -2,11 +2,10 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    height: 100%;
 }
 
 .about-card {
-    padding: 2rem;
+    padding: 2.25rem;
     min-height: 280px;
     display: flex;
     flex-direction: column;
@@ -15,8 +14,9 @@
 
 .about-text {
     color: var(--text-secondary);
-    font-size: 1rem;
+    font-size: 0.975rem;
     line-height: 1.7;
+    font-weight: 400;
 }
 
 .mt-4 {
@@ -25,11 +25,10 @@
 
 .stack-card {
     padding: 2rem;
-    flex-grow: 1;
 }
 
 .stack-category {
-    margin-bottom: 3.5rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,8 +62,6 @@
     padding: 1rem 0.6rem;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: default;
-    animation: chaosCrash 3.8s ease-in-out infinite;
-    animation-delay: calc(var(--i, 0) * 0.23s);
 }
 
 .tech-item:hover {

@@ -23,16 +23,15 @@ function App() {
   return (
     <div className="app-container">
       <Header theme={theme} toggleTheme={toggleTheme} />
-
       <div className="main-grid">
         <div className="left-column">
           <AboutStack />
         </div>
         <div className="right-column">
           <Experience />
+          <Projects />
         </div>
       </div>
-      <Projects />
       <Footer />
     </div>
   );

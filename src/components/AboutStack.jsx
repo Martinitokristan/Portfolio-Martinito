@@ -1,15 +1,14 @@
 import React from 'react';
-import './AboutStack.css'; // Will create/rename Sidebar.css
+import './AboutStack.css';
 import { FaReact, FaJs, FaHtml5, FaCss3, FaNodeJs, FaGitAlt, FaGithub } from 'react-icons/fa';
 import { SiTailwindcss, SiTypescript } from 'react-icons/si';
-
 
 const AboutStack = () => {
     return (
         <div className="about-stack-container">
-            {/* Hero Statement */}
+            {/* About */}
             <div id="about" className="glass-card about-card">
-                <h3 className="section-title">About</h3>
+                <h3 className="section-title">About Me</h3>
                 <p className="about-text">
                     I am a 4th-year Bachelor of Science in Information Technology student at Father Saturnino Urios University, passionate about building modern and user-centered digital solutions. I am currently focusing on Web Development, Mobile Application Development, and Software Engineering.
                 </p>
@@ -76,7 +75,6 @@ const AboutStack = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };

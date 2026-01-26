@@ -20,7 +20,6 @@ const Header = ({ theme, toggleTheme }) => {
 
     if (isHovered) {
         currentImg = profileCover;
-        // Keep zoom for consistency if it's a standalone full photo
         imgStyle = { ...imgStyle, transform: 'scale(1.4)' };
     } else if (theme === 'dark') {
         currentImg = profileSplit;
@@ -29,7 +28,7 @@ const Header = ({ theme, toggleTheme }) => {
 
     return (
         <>
-            <header className="glass-card header-container">
+            <header className="header-container">
                 <div className="header-content">
                     <div
                         className="profile-wrapper"
