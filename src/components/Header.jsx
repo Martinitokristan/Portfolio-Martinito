@@ -68,7 +68,7 @@ const Header = ({ theme, toggleTheme }) => {
                 </div>
 
                 <button className="header-theme-toggle" onClick={toggleTheme}>
-                    {theme === 'dark' ? <FaSun /> : <FaMoon />}
+                    {theme === 'light' ? <FaSun /> : <FaMoon />}
                 </button>
             </header>
 

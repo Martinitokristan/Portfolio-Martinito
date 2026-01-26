@@ -13,8 +13,8 @@
 }
 
 .about-text {
-    color: var(--text-secondary);
-    font-size: 0.975rem;
+    color: var(--text-primary);
+    font-size: 0.875rem;
     line-height: 1.7;
     font-weight: 400;
 }

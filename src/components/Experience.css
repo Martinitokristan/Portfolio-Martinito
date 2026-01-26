@@ -72,14 +72,14 @@
 
 .job-company {
     font-size: 0.875rem;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     font-weight: 400;
 }
 
 .job-date {
     position: static;
     font-size: 0.8rem;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     background: transparent;
     padding: 0;
     border: none;
@@ -88,8 +88,8 @@
 }
 
 .job-desc {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
+    color: var(--text-primary);
+    font-size: 0.875rem;
     line-height: 1.6;
     margin-top: 0.4rem;
 }

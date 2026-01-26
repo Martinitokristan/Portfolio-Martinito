@@ -10,10 +10,13 @@ const AboutStack = () => {
             <div id="about" className="glass-card about-card">
                 <h3 className="section-title">About Me</h3>
                 <p className="about-text">
-                    I am a 4th-year Bachelor of Science in Information Technology student at Father Saturnino Urios University, passionate about building modern and user-centered digital solutions. I am currently focusing on Web Development, Mobile Application Development, and Software Engineering.
+                    I am a 3rd-year Bachelor of Science in Information Technology student at Father Saturnino Urios University, passionate about building modern and user-centered digital solutions. I am currently deriving deep into Web Development, exploring its endless possibilities and learning new technologies every day.
                 </p>
                 <p className="about-text mt-4">
-                    I enjoy solving real-world problems through technology—whether by developing systems that improve daily processes or by creating innovative ideas and turning them into functional applications. I am continuously learning, exploring new tools, and enhancing my skills to grow into a professional developer.
+                    I believe in learning slowly but surely—making consistent progress with each project I build. While I enjoy playing games in my spare time, I'm now fully focused on my studies and honing my development skills. Every line of code I write brings me closer to becoming a professional developer.
+                </p>
+                <p className="about-text mt-4">
+                    I enjoy solving real-world problems through technology and transforming creative ideas into functional applications. I'm continuously exploring new tools, frameworks, and best practices to improve my craft. My goal is to keep learning, keep building, and keep growing in this exciting field.
                 </p>
                 <p className="about-text mt-4">
                     I am actively seeking an Internship / OJT opportunity where I can apply what I've learned and gain hands-on industry experience. I am based in Butuan City, Agusan Del Norte.
