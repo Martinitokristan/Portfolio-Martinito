@@ -4,6 +4,7 @@ import AboutStack from './components/AboutStack';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import Chatbot from './components/Chatbot';
 import './App.css';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         </div>
       </div>
       <Footer />
+      <Chatbot />
     </div>
   );
 }

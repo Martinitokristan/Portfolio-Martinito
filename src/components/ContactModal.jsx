@@ -23,6 +23,8 @@ const ContactModal = ({ isOpen, onClose }) => {
                 body: JSON.stringify({
                     email: email,
                     message: message,
+                    name: "MY PORTFOLIO",
+                    date: new Date().toLocaleString(),
                     _subject: "New Portfolio Message!"
                 })
             });
