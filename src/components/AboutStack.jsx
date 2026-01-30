@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutStack.css';
-import { FaReact, FaJs, FaHtml5, FaCss3, FaNodeJs, FaGitAlt, FaGithub } from 'react-icons/fa';
+import { FaReact, FaJs, FaHtml5, FaCss3, FaNodeJs, FaGitAlt, FaGithub, FaSun, FaFileDownload, FaDatabase } from 'react-icons/fa';
 import { SiTailwindcss, SiTypescript } from 'react-icons/si';
 
 const AboutStack = () => {
@@ -71,6 +71,34 @@ const AboutStack = () => {
                                     '--rr': (Math.random() * 20 - 10) + 'deg'
                                 }}
                             >
+                                <item.Icon className={`tech-icon ${item.class}`} />
+                                <span className="tech-name">{item.name}</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Currently Learning Section */}
+                <div className="stack-category" style={{ marginTop: '2rem' }}>
+                    <span className="category-label">Currently Learning</span>
+                    <div className="tech-grid">
+                        {[
+                            { Icon: FaReact, name: 'Next.js', class: 'nextjs' }, // Reusing React icon for now if Next icon unavailable, or generic
+                            { Icon: FaSun, name: 'Vercel', class: 'vercel' }, // Placeholder icons if specific ones aren't imported
+                            { Icon: FaFileDownload, name: 'SEO', class: 'seo' },
+                            { Icon: FaDatabase, name: 'Databases', class: 'db' }
+                        ].map((item, index) => (
+                            <div
+                                key={item.name}
+                                className="tech-item"
+                                style={{
+                                    '--i': index + 10,
+                                    '--rx': (Math.random() * 20 - 10) + 'px',
+                                    '--ry': (Math.random() * -15 - 5) + 'px',
+                                    '--rr': (Math.random() * 20 - 10) + 'deg'
+                                }}
+                            >
+                                {/* Note: Using generic icons available in the file's imports or existing libraries */}
                                 <item.Icon className={`tech-icon ${item.class}`} />
                                 <span className="tech-name">{item.name}</span>
                             </div>
